@@ -1,0 +1,130 @@
+/* for using different fonts in css */
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap");
+
+.bg-container{
+    background-image: url('https://ideogram.ai/api/images/direct/xFTOAmYHRi-uPDCy0bU7aA.png');
+    background-size: cover;
+    padding: 50px;
+}
+.main-head{
+    font-family: "Roboto";
+    color: white;
+    font-size: 60px;
+    font-weight: bold;
+}
+.caption-para{
+    font-family: "Roboto";
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+.highlight-text{
+    color: yellow;
+}
+.button-points{
+    padding: 10px;
+}
+.list-item{
+    font-family: "Roboto";
+    color: white;
+    font-size: 16px;
+}
+.button-thumb{
+    font-family: "Roboto";
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+}
+.button-1{
+    color: white;
+    background-color: red;
+    outline: 0;
+    border-radius: 8px;
+    padding: 10px;
+    border:none;
+    margin-bottom: 10px;
+}
+.talk-to-us{
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: green;
+    outline: 0;
+    border-radius: 8px;
+    padding: 10px;
+    border:none;
+}
+.sub-cont-2{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.video{
+    height: 200px;
+    width: 400px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 10px;
+}
+@media (min-width: 768px){
+    .bg-container{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .sub-cont-1{ /* main heading and bullet points */
+        width: 50%;
+    }
+    .sub-cont-2{ /* bootstrap utility - youtube video */
+        padding: 20px;
+        width: 50%;
+    }
+    /* by giving width as 50% they will always be side by side in
+    medium to xtra large view */
+    
+    .in-small-cont{ /* in medium to xtra large view no need the bottom section */
+        display: none;
+    }
+}
+@media (max-width: 767px){  /* for mobile view */
+    .sub-cont-3{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .button-points{
+        display: none;
+    }
+    
+    .in-small-cont{
+        background-color: brown;
+        padding: 50px;
+    }
+    .small-head{
+        font-family: "Roboto";
+        color: white;
+        font-size: 50px;
+        font-weight: bold;
+    }
+    .small-side-head{
+        font-family: "Roboto";
+        color: white;
+        font-size: 30px;
+        font-weight: bold;
+    }
+    .small-para{
+        font-family: "Roboto";
+        color: white;
+        font-size: 20px;
+    }
+    .bold-text{
+        font-weight: bold;
+    }
+    .address-head{
+        font-family: "Roboto";
+        color: white;
+        font-size: 30px;
+        font-weight: bold;
+    }
+}
